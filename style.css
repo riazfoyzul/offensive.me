@@ -1,0 +1,125 @@
+@font-face {
+  font-family: "FontAwesome";
+  src: url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/fonts/fontawesome-webfont.woff");
+}
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #fafafa;
+  padding-left: 15%;
+  padding-top: 15%;
+  font-family: "Open Sans";
+}
+@media screen and (max-width: 700px) {
+  body {
+    padding-left: 2%;
+  }
+}
+
+.wrap .wrap-inner {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.title h1 {
+  margin: 0;
+  color: #efefef;
+  text-shadow: 0 -1px #dedede, 0 2px 0 white;
+  font-size: 8rem;
+  line-height: 8rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-family: "Rubik";
+  cursor: none;
+  transition: all 1000ms;
+}
+.title h1 span {
+  color: #dedede;
+  transition: color 1000ms;
+}
+.title h1:hover {
+  color: #dedede;
+}
+.title h1:hover span {
+  color: #efefef;
+}
+@media screen and (max-width: 700px) {
+  .title h1 {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+}
+
+.social {
+  color: #dedede;
+  text-shadow: 0 1px 0 white;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+.social .icons a {
+  color: #dedede;
+}
+.social:hover {
+  color: #cccccc;
+}
+.social:hover .icons a {
+  color: #cccccc;
+}
+.social p {
+  margin: 0 0.125rem 0 0;
+  height: 2rem;
+  padding-top: 1rem;
+  display: inline-block;
+  text-transform: lowercase;
+  letter-spacing: 2px;
+  font-size: 1.3rem;
+  line-height: 1.3rem;
+  transition: all 300ms;
+}
+.social .icons {
+  display: inline-block;
+  height: 2rem;
+  padding: 0;
+}
+.social .icons i {
+  margin: 0 0.45rem 0 0;
+  font-size: 1.3rem;
+  line-height: 1.3rem;
+  padding: 1rem 0.125rem 0 0.125rem;
+  display: block;
+  height: 2rem;
+  float: left;
+  position: relative;
+  transition: all 300ms;
+}
+.social .icons i:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 1.2rem;
+  height: 0.125rem;
+  border-radius: 100%;
+  background: rgba(0, 87, 75, 0.65);
+  opacity: 0;
+  transition: all 250ms;
+}
+.social .icons i:hover {
+  color: #00ebcb;
+  height: 2rem;
+  padding-top: 0;
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+.social .icons i:hover:after {
+  opacity: 0.8;
+}
